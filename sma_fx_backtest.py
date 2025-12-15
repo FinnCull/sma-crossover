@@ -59,35 +59,6 @@ def calculate_max_drawdown(data):
     max_drawdown = drawdown.min()
     return max_drawdown
 
-
-# ticker = "EURUSD=X"
-# start_date = "2015-01-01"
-# end_date = "2025-01-01"
-
-# data = get_data(ticker, start_date, end_date)
-
-# fast_window = 20
-# slow_window = 500
-
-# data = add_sma_indicators(data, fast_window, slow_window)
-
-# data[["Close", "SMA_fast", "SMA_slow"]].plot(figsize=(12, 6))
-
-# data = generate_positions(data)
-
-# data = backtest_strategy(data)
-
-# total_return = calculate_total_return(data)
-# print("Total Return (strategy):", total_return)
-
-# #Assuming 252 trading days 
-# trading_days = 252
-# sharpe_ratio = calculate_sharpe_ratio(data,trading_days)
-# print("Sharpe Ratio:", sharpe_ratio)
-
-# max_drawdown = calculate_max_drawdown(data)
-# print("Max drawdown (strategy):", max_drawdown)
-
 if __name__ == "__main__":
     ticker = "EURUSD=X"
     start_date = "2015-01-01"
